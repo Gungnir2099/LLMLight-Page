@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>LLMLight</title>
+  <link rel="icon" type="image/x-icon" href="static/images/llmlight.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,28 +52,32 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">LLMLight: Large Language Models as Traffic Signal Control Agents</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Siqi Lai</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zhao Xu</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Weijia Zhang</a>,</span>
+                  <span class="author-block">
+                    <a href="https://raymondhliu.github.io/" target="_blank">Hao Liu</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Hui Xiong</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">The Hong Kong University of Science and Technology (Guangzhou)<br>Under Review</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2312.16044.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -83,19 +87,19 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+<!--                    <span class="link-block">-->
+<!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
+<!--                      class="external-link button is-normal is-rounded is-dark">-->
+<!--                      <span class="icon">-->
+<!--                        <i class="fas fa-file-pdf"></i>-->
+<!--                      </span>-->
+<!--                      <span>Supplementary</span>-->
+<!--                    </a>-->
+<!--                  </span>-->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/usail-hkust/LLMTSCS" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,7 +110,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2312.16044" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -129,11 +133,11 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/Demo.mov"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        The demonstration video of LLMLight (powered by LightGPT).
       </h2>
     </div>
   </div>
@@ -148,7 +152,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Traffic Signal Control (TSC) is a crucial component in urban traffic management, aiming to optimize road network efficiency and reduce congestion. Traditional methods in TSC, primarily based on transportation engineering and reinforcement learning (RL), often exhibit limitations in generalization across varied traffic scenarios and lack interpretability. This paper presents LLMLight, a novel framework employing Large Language Models (LLMs) as decision-making agents for TSC. Specifically, the framework begins by instructing the LLM with a knowledgeable prompt detailing real-time traffic conditions. Leveraging the advanced generalization capabilities of LLMs, LLMLight engages a reasoning and decision-making process akin to human intuition for effective traffic control. Moreover, we build LightGPT, a specialized backbone LLM tailored for TSC tasks. By learning nuanced traffic patterns and control strategies, LightGPT enhances the LLMLight framework cost-effectively. Extensive experiments on nine real-world and synthetic datasets showcase the remarkable effectiveness, generalization ability, and interpretability of LLMLight against nine transportation-based and RL-based baselines.
           </p>
         </div>
       </div>
@@ -157,38 +161,146 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Motivation</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              Existing research on TSC has primarily fallen into two categories: transportation and Reinforcement Learning~(RL)-based approaches. Transportation methods primarily focus on crafting efficient heuristic algorithms, dynamically adapting traffic signal configurations based on lane-level traffic conditions. However, these methods heavily rely on manual design, demanding substantial human effort. The emergence of deep neural networks (DNNs) led to the introduction of deep RL-based techniques to address this challenge. These approaches have exhibited remarkable performance across various traffic scenarios. Nevertheless, RL-based methods also present several drawbacks. Primarily, they may struggle with limited generalization ability, particularly when transferring to larger-scale road networks or under highly uncommon scenarios (e.g., extreme high-traffic situations), as their training data only covers limited traffic situations. Additionally, RL-based methods lack interpretability due to the black-box nature of DNNs, which makes it hard to explain the rationale behind their control actions under specific traffic conditions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Challenge 1</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              First, LLMs are typically pre-trained on large-scale natural language corpora and rarely incorporate non-textual traffic data, such as sensor readings and GPS trajectories. Despite their generalization capability across various tasks and domains, an inherent gap exists between real-time traffic data and linguistic understanding. The first challenge lies in enabling LLMs to comprehend real-time traffic dynamics and effectively interact with the traffic environment, which is critical for effective LLM-based traffic signal control.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Challenge 2</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              Second, selecting and developing an effective LLM for TSC poses another significant challenge. Generalist LLMs often lack specific domain knowledge and are prone to hallucination problems in professional fields. Although state-of-the-art LLMs such as GPT-4 demonstrate promising generalization abilities, their closed-source nature and substantial usage costs pose barriers to their optimization for real-time TSC tasks. Consequently, building a specialized LLM tailored for TSC tasks is crucial to deliver more effective and human-aligned control policies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Workflow</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              To this end, we introduce LLMLight, a traffic signal control agent framework based on LLMs, as depicted in the figure. Specifically, we consider TSC as a partially observable Markov Game, where each agent, armed with an LLM, manages the traffic light at an intersection. At each signal-switching time step, the agent collects traffic conditions of the target intersection and transforms them into human-readable text as real-time observation. Additionally, we incorporate task descriptions enriched with commonsense knowledge about a control strategy to aid the LLM's understanding of traffic management tasks. The combined real-time observation, task description, and control action space form a knowledgeable prompt that guides the LLM's decision-making. Then, the agent leverages Chain-of-Thought (CoT) reasoning to determine the optimal traffic signal configuration for the subsequent time step.
+            </p>
+          </div>
+          <img src="static/images/workflow.png" alt="workflow" class="center-image"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">LightGPT Training</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              Furthermore, we construct a specialized LLM, LightGPT, to enhance the LLMLight framework. On the one hand, we propose imitation fine-tuning to let the specialized LLM exploit high-quality control actions and underlying rationales derived from GPT-4. On the other hand, we introduce a policy refinement process that utilizes a well-trained critic model to evaluate and improve the agent's actions. The optimized LightGPT produces more effective control policies and showcases remarkable generalization ability across diverse traffic scenarios in a more cost-effective manner than GPT-4.
+            </p>
+          </div>
+          <img src="static/images/training.png" alt="training" class="center-image"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Comparison Between LLMLight and Traditional Methods</h2>
+          <div class="level-set has-text-justified">
+          </div>
+          <img src="static/images/comparison.png" alt="training" class="center-image"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
+<section class="section is-small">
+    <div class="container is-max-desktop">
     <div class="container">
+      <h2 class="title is-3">Generalization Ability</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/transfer_llmlight_jinan.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Figure 1: The transferability on the Jinan dataset.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/transfer_llmlight_hangzhou.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Figure 2: The transferability on the Hangzhou dataset.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/scalability_att.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         Figure 3: The scalability (in Average Travel Time) on the New York dataset.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/scalability_awt.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Figure 4: The scalability (in Average Waiting Time) on the New York dataset.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/extreme.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Figure 5: The performance under extreme high-traffic scenarios.
       </h2>
     </div>
   </div>
@@ -197,110 +309,74 @@
 </section>
 <!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
+<!-- Image carousel -->
 <section class="hero is-small is-light">
   <div class="hero-body">
+    <div class="container is-max-desktop">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Prompt & Decision-making Process</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/prompt.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Figure 1: The prompt template of LLMLight.
+        </h2>
       </div>
-    </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/reasoning.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Figure 2: The action execution process of LLMLight.
+        </h2>
+      </div>
   </div>
+</div>
+</div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
+<!-- End image carousel -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{lai2024llmlight,
+      title={LLMLight: Large Language Models as Traffic Signal Control Agents},
+      author={Siqi Lai and Zhao Xu and Weijia Zhang and Hao Liu and Hui Xiong},
+      year={2024},
+      eprint={2312.16044},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+          <p class="has-text-centered">
+            This work is developed by USAIL Group of the Hong Kong University of Science and Technology.
           </p>
-
+          <div class="image-container">
+            <img src="static/images/logos.png" alt="Usail logo" class="center-image"/>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </footer>
+
+<style>
+  .image-container {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+</style>
 
 <!-- Statcounter tracking code -->
   
